@@ -1,0 +1,193 @@
+\hypertarget{classIdiom}{}\section{Idiom Class Reference}
+\label{classIdiom}\index{Idiom@{Idiom}}
+
+
+Represents the set of data structures and operations neded to represent our idioms.  
+
+
+
+
+{\ttfamily \#include $<$Idiom.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIdiom_aa32393a932b72825782d348e6f4ddecb}{Idiom} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classIdiom_a16a0d83ac00a85cfe6e934eb44a5414a}{encode} (std\+::string \&txt)
+\begin{DoxyCompactList}\small\item\em Prints to the standard output channel the encoded version of a String. \end{DoxyCompactList}\item 
+void \hyperlink{classIdiom_a82b74f6068e36ad658af962dc01572cf}{decode} (std\+::string \&txt)
+\begin{DoxyCompactList}\small\item\em Prints to the standard output channel the decoded version of a String. \end{DoxyCompactList}\item 
+void \hyperlink{classIdiom_ae596199341218054d763850ff4ecb316}{write\+\_\+frequencies} ()
+\begin{DoxyCompactList}\small\item\em Writes the frequency table to the standard output channel. \end{DoxyCompactList}\item 
+void \hyperlink{classIdiom_ae860afb3dcb10d69e3d1ac9a5c25508b}{write\+\_\+treecode} (const std\+::string \&s) const
+\begin{DoxyCompactList}\small\item\em Writes the treecode to the standard output channel. \end{DoxyCompactList}\item 
+void \hyperlink{classIdiom_afc92894b2350b0394b0e4d44f23095b2}{write\+\_\+codes} (const std\+::string \&ch) const
+\begin{DoxyCompactList}\small\item\em Writes the code(s) of an \hyperlink{classIdiom}{Idiom} to the standard output channel. \end{DoxyCompactList}\item 
+void \hyperlink{classIdiom_a13134381f333552d2283acf188b2285c}{read\+\_\+idiom} ()
+\begin{DoxyCompactList}\small\item\em Reads an \hyperlink{classIdiom}{Idiom}. \end{DoxyCompactList}\item 
+void \hyperlink{classIdiom_adf84ec3e906a170e6f4c6415a07eb300}{make\+\_\+treecode} ()
+\begin{DoxyCompactList}\small\item\em Generates the treecode from the frequency table. \end{DoxyCompactList}\item 
+void \hyperlink{classIdiom_ac9e8c47f009912c613b4b3337ad664d6}{modify\+\_\+idiom} ()
+\begin{DoxyCompactList}\small\item\em Modifies an existing \hyperlink{classIdiom}{Idiom}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the set of data structures and operations neded to represent our idioms. 
+
+Offers operations for reading new or existing idioms and displaying some of their features (treecode, frequency table and codes), as well as a constructor method. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIdiom_aa32393a932b72825782d348e6f4ddecb}\label{classIdiom_aa32393a932b72825782d348e6f4ddecb}} 
+\index{Idiom@{Idiom}!Idiom@{Idiom}}
+\index{Idiom@{Idiom}!Idiom@{Idiom}}
+\subsubsection{\texorpdfstring{Idiom()}{Idiom()}}
+{\footnotesize\ttfamily Idiom\+::\+Idiom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\begin{DoxyPrecond}{Precondition}
+True 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Returns an empty \hyperlink{classIdiom}{Idiom}, with and empty \hyperlink{classTreecode}{Treecode}  Constant 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIdiom_a82b74f6068e36ad658af962dc01572cf}\label{classIdiom_a82b74f6068e36ad658af962dc01572cf}} 
+\index{Idiom@{Idiom}!decode@{decode}}
+\index{decode@{decode}!Idiom@{Idiom}}
+\subsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily void Idiom\+::decode (\begin{DoxyParamCaption}\item[{std\+::string \&}]{txt }\end{DoxyParamCaption})}
+
+
+
+Prints to the standard output channel the decoded version of a String. 
+
+\begin{DoxyPrecond}{Precondition}
+True 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+If the String txt can be decoded in this idiom, the decoded version of the string is printed to the standard output channel. Otherwise, an error message is printed.  O( N ), where N is the length of txt 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classIdiom_a16a0d83ac00a85cfe6e934eb44a5414a}\label{classIdiom_a16a0d83ac00a85cfe6e934eb44a5414a}} 
+\index{Idiom@{Idiom}!encode@{encode}}
+\index{encode@{encode}!Idiom@{Idiom}}
+\subsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily void Idiom\+::encode (\begin{DoxyParamCaption}\item[{std\+::string \&}]{txt }\end{DoxyParamCaption})}
+
+
+
+Prints to the standard output channel the encoded version of a String. 
+
+\begin{DoxyPrecond}{Precondition}
+True 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+If the String txt can be encoded in this idiom, the encoded version of the string is printed to the standard output channel. Otherwise, an error message is printed.  O( N$\ast$log(\+N) ), where N is the length of txt 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classIdiom_adf84ec3e906a170e6f4c6415a07eb300}\label{classIdiom_adf84ec3e906a170e6f4c6415a07eb300}} 
+\index{Idiom@{Idiom}!make\+\_\+treecode@{make\+\_\+treecode}}
+\index{make\+\_\+treecode@{make\+\_\+treecode}!Idiom@{Idiom}}
+\subsubsection{\texorpdfstring{make\+\_\+treecode()}{make\_treecode()}}
+{\footnotesize\ttfamily void Idiom\+::make\+\_\+treecode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates the treecode from the frequency table. 
+
+\begin{DoxyPrecond}{Precondition}
+True 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The treecode has been generated 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classIdiom_ac9e8c47f009912c613b4b3337ad664d6}\label{classIdiom_ac9e8c47f009912c613b4b3337ad664d6}} 
+\index{Idiom@{Idiom}!modify\+\_\+idiom@{modify\+\_\+idiom}}
+\index{modify\+\_\+idiom@{modify\+\_\+idiom}!Idiom@{Idiom}}
+\subsubsection{\texorpdfstring{modify\+\_\+idiom()}{modify\_idiom()}}
+{\footnotesize\ttfamily void Idiom\+::modify\+\_\+idiom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modifies an existing \hyperlink{classIdiom}{Idiom}. 
+
+\begin{DoxyPrecond}{Precondition}
+The standard input channel contains an integer N and N pairs of string, int 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The \hyperlink{classIdiom}{Idiom}\textquotesingle{}s frequency table, treecode and codes now contain the additional pairs from the standard input channel. If tha character in the pair already existed in the \hyperlink{classIdiom}{Idiom}, its frequency is added to the new frequency.  O( N$\ast$log(\+N) ) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classIdiom_a13134381f333552d2283acf188b2285c}\label{classIdiom_a13134381f333552d2283acf188b2285c}} 
+\index{Idiom@{Idiom}!read\+\_\+idiom@{read\+\_\+idiom}}
+\index{read\+\_\+idiom@{read\+\_\+idiom}!Idiom@{Idiom}}
+\subsubsection{\texorpdfstring{read\+\_\+idiom()}{read\_idiom()}}
+{\footnotesize\ttfamily void Idiom\+::read\+\_\+idiom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads an \hyperlink{classIdiom}{Idiom}. 
+
+\begin{DoxyPrecond}{Precondition}
+There is an integer N and N pairs of String, int waiting in the standard input channel. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The implicit parameter is an idiom containing the frequency table and the codes for the N characters  O( N$\ast$log(\+N) ), where N is the number of characters in our idiom. The cost is highr than expected because upon reading an \hyperlink{classIdiom}{Idiom} we also generatew the treecode and the codes for that \hyperlink{classIdiom}{Idiom}. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classIdiom_afc92894b2350b0394b0e4d44f23095b2}\label{classIdiom_afc92894b2350b0394b0e4d44f23095b2}} 
+\index{Idiom@{Idiom}!write\+\_\+codes@{write\+\_\+codes}}
+\index{write\+\_\+codes@{write\+\_\+codes}!Idiom@{Idiom}}
+\subsubsection{\texorpdfstring{write\+\_\+codes()}{write\_codes()}}
+{\footnotesize\ttfamily void Idiom\+::write\+\_\+codes (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ch }\end{DoxyParamCaption}) const}
+
+
+
+Writes the code(s) of an \hyperlink{classIdiom}{Idiom} to the standard output channel. 
+
+\begin{DoxyPrecond}{Precondition}
+True 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+If Code equals \char`\"{}todos\char`\"{} the codes of \hyperlink{classIdiom}{Idiom} Name have been written to the standard output channel. if Code equals one of the characters of our \hyperlink{classIdiom}{Idiom}, the code for that character has been written to the standar output channel. Otherwise, an error message is printed.  O( M$\ast$log(\+N) ), where N is the number of characters in the idiom and M is the number of codes that we want to print (M = N if Code = \char`\"{}todos\char`\"{}. M = 1 otherwise). 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classIdiom_ae596199341218054d763850ff4ecb316}\label{classIdiom_ae596199341218054d763850ff4ecb316}} 
+\index{Idiom@{Idiom}!write\+\_\+frequencies@{write\+\_\+frequencies}}
+\index{write\+\_\+frequencies@{write\+\_\+frequencies}!Idiom@{Idiom}}
+\subsubsection{\texorpdfstring{write\+\_\+frequencies()}{write\_frequencies()}}
+{\footnotesize\ttfamily void Idiom\+::write\+\_\+frequencies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Writes the frequency table to the standard output channel. 
+
+\begin{DoxyPrecond}{Precondition}
+True 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The frequency table has been written to the standard output channel  Linear in realation to N, where N is the number of characters in \hyperlink{classIdiom}{Idiom} Name 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classIdiom_ae860afb3dcb10d69e3d1ac9a5c25508b}\label{classIdiom_ae860afb3dcb10d69e3d1ac9a5c25508b}} 
+\index{Idiom@{Idiom}!write\+\_\+treecode@{write\+\_\+treecode}}
+\index{write\+\_\+treecode@{write\+\_\+treecode}!Idiom@{Idiom}}
+\subsubsection{\texorpdfstring{write\+\_\+treecode()}{write\_treecode()}}
+{\footnotesize\ttfamily void Idiom\+::write\+\_\+treecode (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Writes the treecode to the standard output channel. 
+
+\begin{DoxyPrecond}{Precondition}
+True 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The treecode has been written to the standard output channel if preorder and inorder  O( N ), where N is the number of nodes in the \hyperlink{classBinTree}{Bin\+Tree} that represents the \hyperlink{classTreecode}{Treecode}. 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Idiom_8hh}{Idiom.\+hh}\item 
+\hyperlink{Idiom_8cc}{Idiom.\+cc}\end{DoxyCompactItemize}
