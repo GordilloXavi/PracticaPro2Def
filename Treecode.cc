@@ -40,7 +40,6 @@ void Treecode::make_treecode() {
     tree = *(s.begin());
 } 
 
-
 void Treecode::read_frequency_table(){
     int n, x;
     std::string s;
@@ -122,6 +121,7 @@ void Treecode::write_codes(const std::string& ch) const{
 
 void Treecode::make_codes(){
     std::string s = "";
+    codes = std::map<std::string,std::string>();
     generate_codes(tree, s);
 } 
 
@@ -132,7 +132,7 @@ void Treecode::generate_codes(const BinTree<std::pair<std::string,int>>& t, std:
            generate_codes(t.left(), s+"0");
            generate_codes(t.right(), s+"1");
        }  
-} 
+}  
 
 
 void Treecode::next_symbol(const std::string& s, int& i, std::string& out){
@@ -195,6 +195,7 @@ void Treecode::modify_frequency_table(){
     int n, x;
     std::string s;
     std::cin >> n;
+    frequencies = std::map<std::string,int>(frequencies);
     for(int i = 0; i<n; ++i){
         std::cin >> s >> x;
         std::map<std::string,int>::iterator it = frequencies.find(s);
