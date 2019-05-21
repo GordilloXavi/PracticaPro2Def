@@ -1,0 +1,1572 @@
+//input joc de proves amb comentaris
+
+//Antes de comprobar los "edge cases", introducimos un idioma de prueba para ver que la función anadir/modificar funciona correctamente.
+anadir/modificar idioma_normalon 
+
+2
+
+idioma_grandote
+92
+1 1
+2 2
+3 3
+4 4
+5 5
+6 6
+7 1
+8 1
+9 1
+0 1
+q 1
+w 1
+e 1
+r 1
+t 1
+y 1
+u 1
+i 1
+o 1
+p 1
+a 1
+s 1
+d 1
+f 1
+g 1
+h 1
+j 1
+k 1
+l 1
+ñ 1
+z 1
+x 1
+c 1
+v 1
+b 1
+n 1
+m 1
+Q 1
+W 1
+E 1
+R 1
+T 1
+Y 1
+U 1
+I 1
+O 1
+P 1
+A 1
+S 1
+D 1
+F 1
+G 1
+H 1
+J 1
+K 1
+L 1
+Ñ 1
+Z 1
+X 1
+C 1
+V 1
+B 1
+N 1
+M 1
+À 1
+Á 1
+É 1
+È 1
+Í 1
+Ì 1
+Ó 1
+Ò 1
+Ú 1
+Ù 1
+á 1
+à 1
+é 1
+è 1
+í 1
+ì 1
+ó 1
+ò 1
+ú 1
+ù 1
+! 1
+" 1
+$ 1
+% 1
+& 1
+/ 1
+( 1
+) 1
+//añadimos un idioma muy grande para comprovar que el programa trata eficientemente la creación del treecode y los códigos, así como las posibles llamadas recursicas que se hacen (no pasar por copia las strings)
+
+treecode idioma_grandote
+
+codigos idioma_grandote todos
+
+idioma_tina-chi
+10
+t 1
+i 2
+n 3
+a 4
+s 5
+e 6
+n 7
+p 8
+a 9
+i 10
+
+tabla_frecidioma_tina-chi 
+
+treecodeidioma_tina-chi 
+
+codigos idioma_tina-chi  todos
+
+codigos idioma_tina-chi a
+
+codifica idioma_tina-chi 
+tinasenpai
+
+//codificamos un carácter que no forma parte del idioma
+
+codifica idioma_tina-chi 
+tina_senpai
+
+decodificaidioma_tina-chi 
+100101110100100100100110
+
+anadir/modificar idioma_normalon
+4
+a 1
+b 3
+c 5
+d 6
+
+tabla_frec idioma_normalon
+
+treecode idioma_normalon
+
+codigos idioma_normalon  todos
+
+codigos idioma_normalon a
+
+codifica idioma_normalon 
+abcdaaaacd
+
+//codificamos un carácter que no forma parte del idioma
+
+codifica idioma_normalon 
+xbcdaaaacd
+
+decodifica idioma_normalon
+100101110100100100100110
+
+decodifica idioma_normalon
+111
+
+
+
+anadir/modificar idiomita1
+4
+a -1 //ponemos una frecuencia negativa al no haber restricciones al respecto.
+b 3
+c 5
+d 6
+
+tabla_frec idiomita1
+
+treecode idiomita1
+
+codigos idiomita1  todos
+
+codigos idiomita1 a
+
+codifica idiomita1 
+abcdaaaacd
+
+codifica idiomita1 //codificamos un carácter que no forma parte del idioma
+xbcdaaaacd
+
+decodifica idiomita1
+100101110100100100100110
+
+decodifica idiomita1
+111
+
+
+//ponemos un idioma con todas la frecuencias iguales para comprobar que los caracteres se ordenan por orden lexicográfico.
+
+
+//Para cada idioma, probamos todas las funcionalidades para certificar que todo se ejecuta correctamente. Para determinadas funcionalidades (codifica/decodifica), comprobamos que éstas funcionan correctamente con diferentes entradas.
+
+
+//joc de proves sense comentaris
+
+2
+
+idioma_tina-chi
+10
+t 1
+i 2
+n 3
+a 4
+s 5
+e 6
+n 7
+p 8
+a 9
+i 10
+
+idioma_grandote
+92
+1 1
+2 2
+3 3
+4 4
+5 5
+6 6
+7 1
+8 1
+9 1
+0 1
+q 1
+w 1
+e 1
+r 1
+t 1
+y 1
+u 1
+i 1
+o 1
+p 1
+a 1
+s 1
+d 1
+f 1
+g 1
+h 1
+j 1
+k 1
+l 1
+ñ 1
+z 1
+x 1
+c 1
+v 1
+b 1
+n 1
+m 1
+Q 1
+W 1
+E 1
+R 1
+T 1
+Y 1
+U 1
+I 1
+O 1
+P 1
+A 1
+S 1
+D 1
+F 1
+G 1
+H 1
+J 1
+K 1
+L 1
+Ñ 1
+Z 1
+X 1
+C 1
+V 1
+B 1
+N 1
+M 1
+À 1
+Á 1
+É 1
+È 1
+Í 1
+Ì 1
+Ó 1
+Ò 1
+Ú 1
+Ù 1
+á 1
+à 1
+é 1
+è 1
+í 1
+ì 1
+ó 1
+ò 1
+ú 1
+ù 1
+! 1
+" 1
+$ 1
+% 1
+& 1
+/ 1
+( 1
+) 1
+
+treecode idioma_grandote
+
+codigos idioma_grandote todos
+
+tabla_frecidioma_tina-chi 
+
+treecodeidioma_tina-chi 
+
+codigos idioma_tina-chi  todos
+
+codigos idioma_tina-chi a
+
+codifica idioma_tina-chi 
+tinasenpai
+
+codifica idioma_tina-chi 
+tina_senpai
+
+decodificaidioma_tina-chi 
+100101110100100100100110
+
+anadir/modificar idioma_normalon
+4
+a 1
+b 3
+c 5
+d 6
+
+tabla_frec idioma_normalon
+
+treecode idioma_normalon
+
+codigos idioma_normalon  todos
+
+codigos idioma_normalon a
+
+codifica idioma_normalon 
+abcdaaaacd
+
+codifica idioma_normalon 
+xbcdaaaacd
+
+decodifica idioma_normalon
+100101110100100100100110
+
+decodifica idioma_normalon
+111
+
+
+
+anadir/modificar idiomita1
+4
+a -1 
+b 3
+c 5
+d 6
+
+tabla_frec idiomita1
+
+treecode idiomita1
+
+codigos idiomita1  todos
+
+codigos idiomita1 a
+
+codifica idiomita1 
+abcdaaaacd
+
+codifica idiomita1 
+xbcdaaaacd
+
+decodifica idiomita1
+100101110100100100100110
+
+decodifica idiomita1
+111
+
+
+//output joc de proves sense comentaris
+
+Treecode de idioma_grandote:
+recorrido en preorden:
+!"úóùìíñòÒÓÙÚàáèé$%&(3)/012785649ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 107
+!"úóùìíñòÒÓÙÚàáèé$%&(3)/0127856 43
+!"úóùìíñòÒÓÙÚàáèé 17
+ÒÓÙÚàáèé 8
+ÒÓÙÚ 4
+ÒÓ 2
+Ò 1
+Ó 1
+ÙÚ 2
+Ù 1
+Ú 1
+àáèé 4
+àá 2
+à 1
+á 1
+èé 2
+è 1
+é 1
+!"úóùìíñò 9
+ìíñò 4
+ìí 2
+ì 1
+í 1
+ñò 2
+ñ 1
+ò 1
+!"úóù 5
+óù 2
+ó 1
+ù 1
+!"ú 3
+ú 1
+!" 2
+! 1
+" 1
+$%&(3)/0127856 26
+56 11
+5 5
+6 6
+$%&(3)/01278 15
+$%&(3 7
+3 3
+$%&( 4
+$% 2
+$ 1
+% 1
+&( 2
+& 1
+( 1
+)/01278 8
+)/01 4
+)/ 2
+) 1
+/ 1
+01 2
+0 1
+1 1
+278 4
+2 2
+78 2
+7 1
+8 1
+49ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 64
+49ABCDEFGHIJKLMNOPQRSTUVWXYZa 32
+49ABCDEFGHIJK 16
+49ABC 8
+4 4
+9ABC 4
+9A 2
+9 1
+A 1
+BC 2
+B 1
+C 1
+DEFGHIJK 8
+DEFG 4
+DE 2
+D 1
+E 1
+FG 2
+F 1
+G 1
+HIJK 4
+HI 2
+H 1
+I 1
+JK 2
+J 1
+K 1
+LMNOPQRSTUVWXYZa 16
+LMNOPQRS 8
+LMNO 4
+LM 2
+L 1
+M 1
+NO 2
+N 1
+O 1
+PQRS 4
+PQ 2
+P 1
+Q 1
+RS 2
+R 1
+S 1
+TUVWXYZa 8
+TUVW 4
+TU 2
+T 1
+U 1
+VW 2
+V 1
+W 1
+XYZa 4
+XY 2
+X 1
+Y 1
+Za 2
+Z 1
+a 1
+bcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 32
+bcdefghijklmnopq 16
+bcdefghi 8
+bcde 4
+bc 2
+b 1
+c 1
+de 2
+d 1
+e 1
+fghi 4
+fg 2
+f 1
+g 1
+hi 2
+h 1
+i 1
+jklmnopq 8
+jklm 4
+jk 2
+j 1
+k 1
+lm 2
+l 1
+m 1
+nopq 4
+no 2
+n 1
+o 1
+pq 2
+p 1
+q 1
+rstuvwxyzÀÁÈÉÌÍÑ 16
+rstuvwxy 8
+rstu 4
+rs 2
+r 1
+s 1
+tu 2
+t 1
+u 1
+vwxy 4
+vw 2
+v 1
+w 1
+xy 2
+x 1
+y 1
+zÀÁÈÉÌÍÑ 8
+zÀÁÈ 4
+zÀ 2
+z 1
+À 1
+ÁÈ 2
+Á 1
+È 1
+ÉÌÍÑ 4
+ÉÌ 2
+É 1
+Ì 1
+ÍÑ 2
+Í 1
+Ñ 1
+recorrido en inorden:
+Ò 1
+ÒÓ 2
+Ó 1
+ÒÓÙÚ 4
+Ù 1
+ÙÚ 2
+Ú 1
+ÒÓÙÚàáèé 8
+à 1
+àá 2
+á 1
+àáèé 4
+è 1
+èé 2
+é 1
+!"úóùìíñòÒÓÙÚàáèé 17
+ì 1
+ìí 2
+í 1
+ìíñò 4
+ñ 1
+ñò 2
+ò 1
+!"úóùìíñò 9
+ó 1
+óù 2
+ù 1
+!"úóù 5
+ú 1
+!"ú 3
+! 1
+!" 2
+" 1
+!"úóùìíñòÒÓÙÚàáèé$%&(3)/0127856 43
+5 5
+56 11
+6 6
+$%&(3)/0127856 26
+3 3
+$%&(3 7
+$ 1
+$% 2
+% 1
+$%&( 4
+& 1
+&( 2
+( 1
+$%&(3)/01278 15
+) 1
+)/ 2
+/ 1
+)/01 4
+0 1
+01 2
+1 1
+)/01278 8
+2 2
+278 4
+7 1
+78 2
+8 1
+!"úóùìíñòÒÓÙÚàáèé$%&(3)/012785649ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 107
+4 4
+49ABC 8
+9 1
+9A 2
+A 1
+9ABC 4
+B 1
+BC 2
+C 1
+49ABCDEFGHIJK 16
+D 1
+DE 2
+E 1
+DEFG 4
+F 1
+FG 2
+G 1
+DEFGHIJK 8
+H 1
+HI 2
+I 1
+HIJK 4
+J 1
+JK 2
+K 1
+49ABCDEFGHIJKLMNOPQRSTUVWXYZa 32
+L 1
+LM 2
+M 1
+LMNO 4
+N 1
+NO 2
+O 1
+LMNOPQRS 8
+P 1
+PQ 2
+Q 1
+PQRS 4
+R 1
+RS 2
+S 1
+LMNOPQRSTUVWXYZa 16
+T 1
+TU 2
+U 1
+TUVW 4
+V 1
+VW 2
+W 1
+TUVWXYZa 8
+X 1
+XY 2
+Y 1
+XYZa 4
+Z 1
+Za 2
+a 1
+49ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 64
+b 1
+bc 2
+c 1
+bcde 4
+d 1
+de 2
+e 1
+bcdefghi 8
+f 1
+fg 2
+g 1
+fghi 4
+h 1
+hi 2
+i 1
+bcdefghijklmnopq 16
+j 1
+jk 2
+k 1
+jklm 4
+l 1
+lm 2
+m 1
+jklmnopq 8
+n 1
+no 2
+o 1
+nopq 4
+p 1
+pq 2
+q 1
+bcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 32
+r 1
+rs 2
+s 1
+rstu 4
+t 1
+tu 2
+u 1
+rstuvwxy 8
+v 1
+vw 2
+w 1
+vwxy 4
+x 1
+xy 2
+y 1
+rstuvwxyzÀÁÈÉÌÍÑ 16
+z 1
+zÀ 2
+À 1
+zÀÁÈ 4
+Á 1
+ÁÈ 2
+È 1
+zÀÁÈÉÌÍÑ 8
+É 1
+ÉÌ 2
+Ì 1
+ÉÌÍÑ 4
+Í 1
+ÍÑ 2
+Ñ 1
+
+Codigos de idioma_grandote:
+! 0011110
+" 0011111
+$ 0110100
+% 0110101
+& 0110110
+( 0110111
+) 0111000
+/ 0111001
+0 0111010
+1 0111011
+2 011110
+3 01100
+4 10000
+5 0100
+6 0101
+7 0111110
+8 0111111
+9 1000100
+A 1000101
+B 1000110
+C 1000111
+D 1001000
+E 1001001
+F 1001010
+G 1001011
+H 1001100
+I 1001101
+J 1001110
+K 1001111
+L 1010000
+M 1010001
+N 1010010
+O 1010011
+P 1010100
+Q 1010101
+R 1010110
+S 1010111
+T 1011000
+U 1011001
+V 1011010
+W 1011011
+X 1011100
+Y 1011101
+Z 1011110
+a 1011111
+b 1100000
+c 1100001
+d 1100010
+e 1100011
+f 1100100
+g 1100101
+h 1100110
+i 1100111
+j 1101000
+k 1101001
+l 1101010
+m 1101011
+n 1101100
+o 1101101
+p 1101110
+q 1101111
+r 1110000
+s 1110001
+t 1110010
+u 1110011
+v 1110100
+w 1110101
+x 1110110
+y 1110111
+z 1111000
+À 1111001
+Á 1111010
+È 1111011
+É 1111100
+Ì 1111101
+Í 1111110
+Ñ 1111111
+Ò 000000
+Ó 000001
+Ù 000010
+Ú 000011
+à 000100
+á 000101
+è 000110
+é 000111
+ì 001000
+í 001001
+ñ 001010
+ò 001011
+ó 001100
+ù 001101
+ú 001110
+
+Codigos de idioma_tina-chi:
+a 110
+e 00
+i 0101
+n 011
+p 10
+s 111
+t 0100
+
+Codigo de a en idioma_tina-chi:
+a 110
+
+Codifica en idioma_tina-chi el texto:
+tinasenpai
+0100010101111011100011101100101
+
+Codifica en idioma_tina-chi el texto:
+tina_senpai
+El texto no pertenece al idioma; primer caracter que falla: _
+
+Anadido idioma_normalon
+
+Tabla de frecuencias de idioma_normalon:
+a 1
+b 3
+c 5
+d 6
+
+Treecode de idioma_normalon:
+recorrido en preorden:
+abcd 15
+d 6
+abc 9
+ab 4
+a 1
+b 3
+c 5
+recorrido en inorden:
+d 6
+abcd 15
+a 1
+ab 4
+b 3
+abc 9
+c 5
+
+Codigos de idioma_normalon:
+a 100
+b 101
+c 11
+d 0
+
+Codigo de a en idioma_normalon:
+a 100
+
+Codifica en idioma_normalon el texto:
+abcdaaaacd
+100101110100100100100110
+
+Codifica en idioma_normalon el texto:
+xbcdaaaacd
+El texto no pertenece al idioma; primer caracter que falla: x
+
+Decodifica en idioma_normalon el texto:
+100101110100100100100110
+abcdaaaacd
+
+Decodifica en idioma_normalon el texto:
+111
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 2
+
+Anadido idiomita1
+
+Tabla de frecuencias de idiomita1:
+a -1
+b 3
+c 5
+d 6
+
+Treecode de idiomita1:
+recorrido en preorden:
+abcd 13
+d 6
+abc 7
+ab 2
+a -1
+b 3
+c 5
+recorrido en inorden:
+d 6
+abcd 13
+a -1
+ab 2
+b 3
+abc 7
+c 5
+
+Codigos de idiomita1:
+a 100
+b 101
+c 11
+d 0
+
+Codigo de a en idiomita1:
+a 100
+
+Codifica en idiomita1 el texto:
+abcdaaaacd
+100101110100100100100110
+
+Codifica en idiomita1 el texto:
+xbcdaaaacd
+El texto no pertenece al idioma; primer caracter que falla: x
+
+Decodifica en idiomita1 el texto:
+100101110100100100100110
+abcdaaaacd
+
+Decodifica en idiomita1 el texto:
+111
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 2
+
+//output de joc de proves amb comentaris
+
+//comprovamos que el  treecode se genera bien. Si se usan llamadas recursivas pasando parámetros por copia es posible que se produzca un stack overflow
+
+Treecode de idioma_grandote:
+recorrido en preorden:
+!"úóùìíñòÒÓÙÚàáèé$%&(3)/012785649ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 107
+!"úóùìíñòÒÓÙÚàáèé$%&(3)/0127856 43
+!"úóùìíñòÒÓÙÚàáèé 17
+ÒÓÙÚàáèé 8
+ÒÓÙÚ 4
+ÒÓ 2
+Ò 1
+Ó 1
+ÙÚ 2
+Ù 1
+Ú 1
+àáèé 4
+àá 2
+à 1
+á 1
+èé 2
+è 1
+é 1
+!"úóùìíñò 9
+ìíñò 4
+ìí 2
+ì 1
+í 1
+ñò 2
+ñ 1
+ò 1
+!"úóù 5
+óù 2
+ó 1
+ù 1
+!"ú 3
+ú 1
+!" 2
+! 1
+" 1
+$%&(3)/0127856 26
+56 11
+5 5
+6 6
+$%&(3)/01278 15
+$%&(3 7
+3 3
+$%&( 4
+$% 2
+$ 1
+% 1
+&( 2
+& 1
+( 1
+)/01278 8
+)/01 4
+)/ 2
+) 1
+/ 1
+01 2
+0 1
+1 1
+278 4
+2 2
+78 2
+7 1
+8 1
+49ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 64
+49ABCDEFGHIJKLMNOPQRSTUVWXYZa 32
+49ABCDEFGHIJK 16
+49ABC 8
+4 4
+9ABC 4
+9A 2
+9 1
+A 1
+BC 2
+B 1
+C 1
+DEFGHIJK 8
+DEFG 4
+DE 2
+D 1
+E 1
+FG 2
+F 1
+G 1
+HIJK 4
+HI 2
+H 1
+I 1
+JK 2
+J 1
+K 1
+LMNOPQRSTUVWXYZa 16
+LMNOPQRS 8
+LMNO 4
+LM 2
+L 1
+M 1
+NO 2
+N 1
+O 1
+PQRS 4
+PQ 2
+P 1
+Q 1
+RS 2
+R 1
+S 1
+TUVWXYZa 8
+TUVW 4
+TU 2
+T 1
+U 1
+VW 2
+V 1
+W 1
+XYZa 4
+XY 2
+X 1
+Y 1
+Za 2
+Z 1
+a 1
+bcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 32
+bcdefghijklmnopq 16
+bcdefghi 8
+bcde 4
+bc 2
+b 1
+c 1
+de 2
+d 1
+e 1
+fghi 4
+fg 2
+f 1
+g 1
+hi 2
+h 1
+i 1
+jklmnopq 8
+jklm 4
+jk 2
+j 1
+k 1
+lm 2
+l 1
+m 1
+nopq 4
+no 2
+n 1
+o 1
+pq 2
+p 1
+q 1
+rstuvwxyzÀÁÈÉÌÍÑ 16
+rstuvwxy 8
+rstu 4
+rs 2
+r 1
+s 1
+tu 2
+t 1
+u 1
+vwxy 4
+vw 2
+v 1
+w 1
+xy 2
+x 1
+y 1
+zÀÁÈÉÌÍÑ 8
+zÀÁÈ 4
+zÀ 2
+z 1
+À 1
+ÁÈ 2
+Á 1
+È 1
+ÉÌÍÑ 4
+ÉÌ 2
+É 1
+Ì 1
+ÍÑ 2
+Í 1
+Ñ 1
+recorrido en inorden:
+Ò 1
+ÒÓ 2
+Ó 1
+ÒÓÙÚ 4
+Ù 1
+ÙÚ 2
+Ú 1
+ÒÓÙÚàáèé 8
+à 1
+àá 2
+á 1
+àáèé 4
+è 1
+èé 2
+é 1
+!"úóùìíñòÒÓÙÚàáèé 17
+ì 1
+ìí 2
+í 1
+ìíñò 4
+ñ 1
+ñò 2
+ò 1
+!"úóùìíñò 9
+ó 1
+óù 2
+ù 1
+!"úóù 5
+ú 1
+!"ú 3
+! 1
+!" 2
+" 1
+!"úóùìíñòÒÓÙÚàáèé$%&(3)/0127856 43
+5 5
+56 11
+6 6
+$%&(3)/0127856 26
+3 3
+$%&(3 7
+$ 1
+$% 2
+% 1
+$%&( 4
+& 1
+&( 2
+( 1
+$%&(3)/01278 15
+) 1
+)/ 2
+/ 1
+)/01 4
+0 1
+01 2
+1 1
+)/01278 8
+2 2
+278 4
+7 1
+78 2
+8 1
+!"úóùìíñòÒÓÙÚàáèé$%&(3)/012785649ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 107
+4 4
+49ABC 8
+9 1
+9A 2
+A 1
+9ABC 4
+B 1
+BC 2
+C 1
+49ABCDEFGHIJK 16
+D 1
+DE 2
+E 1
+DEFG 4
+F 1
+FG 2
+G 1
+DEFGHIJK 8
+H 1
+HI 2
+I 1
+HIJK 4
+J 1
+JK 2
+K 1
+49ABCDEFGHIJKLMNOPQRSTUVWXYZa 32
+L 1
+LM 2
+M 1
+LMNO 4
+N 1
+NO 2
+O 1
+LMNOPQRS 8
+P 1
+PQ 2
+Q 1
+PQRS 4
+R 1
+RS 2
+S 1
+LMNOPQRSTUVWXYZa 16
+T 1
+TU 2
+U 1
+TUVW 4
+V 1
+VW 2
+W 1
+TUVWXYZa 8
+X 1
+XY 2
+Y 1
+XYZa 4
+Z 1
+Za 2
+a 1
+49ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 64
+b 1
+bc 2
+c 1
+bcde 4
+d 1
+de 2
+e 1
+bcdefghi 8
+f 1
+fg 2
+g 1
+fghi 4
+h 1
+hi 2
+i 1
+bcdefghijklmnopq 16
+j 1
+jk 2
+k 1
+jklm 4
+l 1
+lm 2
+m 1
+jklmnopq 8
+n 1
+no 2
+o 1
+nopq 4
+p 1
+pq 2
+q 1
+bcdefghijklmnopqrstuvwxyzÀÁÈÉÌÍÑ 32
+r 1
+rs 2
+s 1
+rstu 4
+t 1
+tu 2
+u 1
+rstuvwxy 8
+v 1
+vw 2
+w 1
+vwxy 4
+x 1
+xy 2
+y 1
+rstuvwxyzÀÁÈÉÌÍÑ 16
+z 1
+zÀ 2
+À 1
+zÀÁÈ 4
+Á 1
+ÁÈ 2
+È 1
+zÀÁÈÉÌÍÑ 8
+É 1
+ÉÌ 2
+Ì 1
+ÉÌÍÑ 4
+Í 1
+ÍÑ 2
+Ñ 1
+
+Codigos de idioma_grandote:
+! 0011110
+" 0011111
+$ 0110100
+% 0110101
+& 0110110
+( 0110111
+) 0111000
+/ 0111001
+0 0111010
+1 0111011
+2 011110
+3 01100
+4 10000
+5 0100
+6 0101
+7 0111110
+8 0111111
+9 1000100
+A 1000101
+B 1000110
+C 1000111
+D 1001000
+E 1001001
+F 1001010
+G 1001011
+H 1001100
+I 1001101
+J 1001110
+K 1001111
+L 1010000
+M 1010001
+N 1010010
+O 1010011
+P 1010100
+Q 1010101
+R 1010110
+S 1010111
+T 1011000
+U 1011001
+V 1011010
+W 1011011
+X 1011100
+Y 1011101
+Z 1011110
+a 1011111
+b 1100000
+c 1100001
+d 1100010
+e 1100011
+f 1100100
+g 1100101
+h 1100110
+i 1100111
+j 1101000
+k 1101001
+l 1101010
+m 1101011
+n 1101100
+o 1101101
+p 1101110
+q 1101111
+r 1110000
+s 1110001
+t 1110010
+u 1110011
+v 1110100
+w 1110101
+x 1110110
+y 1110111
+z 1111000
+À 1111001
+Á 1111010
+È 1111011
+É 1111100
+Ì 1111101
+Í 1111110
+Ñ 1111111
+Ò 000000
+Ó 000001
+Ù 000010
+Ú 000011
+à 000100
+á 000101
+è 000110
+é 000111
+ì 001000
+í 001001
+ñ 001010
+ò 001011
+ó 001100
+ù 001101
+ú 001110
+
+Codigos de idioma_tina-chi:
+a 110
+e 00
+i 0101
+n 011
+p 10
+s 111
+t 0100
+
+Codigo de a en idioma_tina-chi:
+a 110
+
+Codifica en idioma_tina-chi el texto:
+tinasenpai
+0100010101111011100011101100101
+
+Codifica en idioma_tina-chi el texto:
+tina_senpai
+El texto no pertenece al idioma; primer caracter que falla: _
+
+Anadido idioma_normalon
+
+Tabla de frecuencias de idioma_normalon:
+a 1
+b 3
+c 5
+d 6
+
+Treecode de idioma_normalon:
+recorrido en preorden:
+abcd 15
+d 6
+abc 9
+ab 4
+a 1
+b 3
+c 5
+recorrido en inorden:
+d 6
+abcd 15
+a 1
+ab 4
+b 3
+abc 9
+c 5
+
+Codigos de idioma_normalon:
+a 100
+b 101
+c 11
+d 0
+
+Codigo de a en idioma_normalon:
+a 100
+
+Codifica en idioma_normalon el texto:
+abcdaaaacd
+100101110100100100100110
+
+Codifica en idioma_normalon el texto:
+xbcdaaaacd
+El texto no pertenece al idioma; primer caracter que falla: x
+
+Decodifica en idioma_normalon el texto:
+100101110100100100100110
+abcdaaaacd
+
+Decodifica en idioma_normalon el texto:
+111
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 2
+
+Anadido idiomita1
+
+Tabla de frecuencias de idiomita1:
+a -1
+b 3
+c 5
+d 6
+
+Treecode de idiomita1:
+recorrido en preorden:
+abcd 13
+d 6
+abc 7
+ab 2
+a -1
+b 3
+c 5
+recorrido en inorden:
+d 6
+abcd 13
+a -1
+ab 2
+b 3
+abc 7
+c 5
+
+Codigos de idiomita1:
+a 100
+b 101
+c 11
+d 0
+
+Codigo de a en idiomita1:
+a 100
+
+Codifica en idiomita1 el texto:
+abcdaaaacd
+100101110100100100100110
+
+Codifica en idiomita1 el texto:
+xbcdaaaacd
+El texto no pertenece al idioma; primer caracter que falla: x
+
+Decodifica en idiomita1 el texto:
+100101110100100100100110
+abcdaaaacd
+
+Decodifica en idiomita1 el texto:
+111
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 2
+
