@@ -50,7 +50,7 @@ void Treecode::read_frequency_table(){
     } 
 } 
 
-void Treecode::write_frequencies(){
+void Treecode::write_frequencies() const{
     std::map<std::string,int>::const_iterator it = frequencies.begin();
     while(it != frequencies.end()){
         std::cout << it->first << ' ' << it->second << std::endl;
@@ -68,7 +68,7 @@ void Treecode::write_treecode(const std::string& id) const{
     std::cout << std::endl;
 } 
 
-void Treecode::write_treecode_pre(const BinTree<std::pair<std::string,int>>& t) {
+void Treecode::write_treecode_pre(const BinTree<std::pair<std::string,int>>& t) const{
     
     if(not t.empty()){
         std::cout << t.value().first << ' ' << t.value().second << std::endl;

@@ -42,14 +42,14 @@ class Idiom {
          * @post If the String txt can be encoded in this idiom, the encoded version of the string is printed to the standard output channel. Otherwise, an error message is printed. 
          * @coste O( N*log(N) ), where N is the length of txt
          * */
-        void encode(std::string& txt);
+        void encode(std::string& txt) const;
 
         /** @brief Prints to the standard output channel the decoded version of a String
          * @pre True 
          * @post If the String txt can be decoded in this idiom, the decoded version of the string is printed to the standard output channel. Otherwise, an error message is printed. 
          * @coste O( N ), where N is the length of txt
          * */
-        void decode(std::string& txt);
+        void decode(std::string& txt) const;
 
 
         /** @brief Writes the frequency table to the standard output channel 
@@ -57,7 +57,7 @@ class Idiom {
          * @post The frequency table has been written to the standard output channel
          * @coste Linear in realation to N, where N is the number of characters in Idiom Name 
          * */
-        void write_frequencies();
+        void write_frequencies() const;
 
 
         /** @brief Writes the treecode to the standard output channel 

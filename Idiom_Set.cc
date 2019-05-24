@@ -9,7 +9,6 @@ Idiom_Set::Idiom_Set(){
     std::map<std::string, Idiom> idiom_set;
 }
 
-// HACER FUNCION CONTAINS!!!!!!!!!!!!!!!!!!!
 
 void Idiom_Set::write_treecode() const{
     std::string s;
@@ -50,10 +49,10 @@ void Idiom_Set::add_idiom(bool initial){
     if(not initial)std::cout << "Anadido " << name << "\n\n";
 } 
 
-void Idiom_Set::write_frequency_table(){
+void Idiom_Set::write_frequency_table() const{
     std::string name;
     std::cin >> name;
-    std::map<std::string,Idiom>::iterator it = idiom_set.find(name);
+    std::map<std::string,Idiom>::const_iterator it = idiom_set.find(name);
     if(it != idiom_set.end()){
         std::cout << "Tabla de frecuencias de " << name << ':' << std::endl;
         it->second.write_frequencies();
@@ -61,10 +60,10 @@ void Idiom_Set::write_frequency_table(){
     else std::cout << "Tabla de frecuencias de " << name << ":\nEl idioma no existe\n\n";
 } 
 
-void Idiom_Set::encode(){
+void Idiom_Set::encode() const{
     std::string name, text;
     std::cin >> name >> text;
-    std::map<std::string,Idiom>::iterator it = idiom_set.find(name);
+    std::map<std::string,Idiom>::const_iterator it = idiom_set.find(name);
     std::cout << "Codifica en " << name << " el texto:\n" << text << "\n";
     if(it == idiom_set.end()){
         std::cout << "El idioma no existe\n\n";
@@ -74,10 +73,10 @@ void Idiom_Set::encode(){
      
 } 
 
-void Idiom_Set::decode(){
+void Idiom_Set::decode() const{
     std::string name, text;
     std::cin >> name >> text;
-    std::map<std::string,Idiom>::iterator it = idiom_set.find(name);
+    std::map<std::string,Idiom>::const_iterator it = idiom_set.find(name);
     std::cout << "Decodifica en " << name << " el texto:\n" << text << "\n";
     if(it == idiom_set.end()){
         std::cout << "El idioma no existe\n\n";

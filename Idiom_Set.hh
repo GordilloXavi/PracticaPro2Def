@@ -49,7 +49,7 @@ class Idiom_Set {
          * @post If the Idiom Name is in the set and the String Text can be encoded in this idiom, the encoded version of the string is printed to the standard output channel. Otherwise, an error message is printed. 
          * @coste O( N*log(N) ), where N is the length of Text 
          * */
-        void encode();
+        void encode() const;
 
 
         /** @brief Prints to the standard output channel the decoded version of a String
@@ -57,7 +57,7 @@ class Idiom_Set {
          * @post If the Idiom Name is in the set and the String Text can be decoded in this idiom, the decoded version of the string is printed to the standard output channel. Otherwise, an error message is printed. 
          * @coste O( N ), where N is the length of Text 
          * */
-        void decode();
+        void decode() const;
 
 
         /** @brief Writes the frequency table to the standard output channel 
@@ -65,7 +65,7 @@ class Idiom_Set {
          * @post If the Idiom Name is in the set, the frequency table has been written to the standard output channel. Otherwise, an error message is printed. 
          * @coste Linear in realation to N, where N is the number of characters in Idiom Name 
          * */
-        void write_frequency_table(); 
+        void write_frequency_table() const; 
 
 
         /** @brief Writes the treecode table to the standard output channel 

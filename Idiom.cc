@@ -9,7 +9,6 @@ Idiom::Idiom(){
    Treecode tree;
 }
 
-
 void Idiom::read_idiom(){
     tree.read_frequency_table();
     tree.make_treecode();
@@ -22,7 +21,7 @@ void Idiom::modify_idiom(){
     tree.make_codes();
 } 
 
-void Idiom::write_frequencies(){
+void Idiom::write_frequencies() const{
     tree.write_frequencies();
 } 
 
@@ -35,14 +34,11 @@ void Idiom::write_codes(const std::string& ch) const{
     tree.write_codes(ch);
 } 
 
-void Idiom::encode(std::string& txt){
-    
+void Idiom::encode(std::string& txt) const{
     tree.encode(txt);
-
 } 
 
-void Idiom::decode(std::string& txt){
+void Idiom::decode(std::string& txt) const{
     std::string s = txt;    
     tree.decode(s);
-
 } 
